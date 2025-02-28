@@ -1,10 +1,15 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/SnapCamKit2/', // Must match your repository name
+  base: './', // Change this for local development
   build: {
     outDir: 'dist',
-    sourcemap: true
+    sourcemap: true,
+    rollupOptions: {
+      output: {
+        manualChunks: undefined
+      }
+    }
   },
   server: {
     port: 3000,
