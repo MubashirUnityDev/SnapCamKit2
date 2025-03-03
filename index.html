@@ -1,3 +1,4 @@
+index.html -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -10,10 +11,23 @@
         height: 100vh;
         display: block;
       }
+      .controls {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 20px;
+        z-index: 1000;
+      }
     </style>
-    <script type="module" crossorigin src="/SnapCamKit2/assets/index-Ch1sLUrD.js"></script>
+    <script type="module" crossorigin src="/SnapCamKit2/assets/index-Dl1nqpY5.js"></script>
   </head>
   <body>
     <canvas id="canvas"></canvas>
+    <div class="controls">
+      <button id="captureBtn">📸 Capture</button>
+      <button id="recordBtn">🎥 Record</button>
+    </div>
   </body>
 </html>
