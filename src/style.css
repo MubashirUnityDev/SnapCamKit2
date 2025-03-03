@@ -94,3 +94,16 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.controls button {
+  padding: 12px 24px;
+  font-size: 1.2em;
+  background-color: rgba(26, 26, 26, 0.8);
+  border: 2px solid white;
+  color: white;
+  backdrop-filter: blur(5px);
+}
+
+.controls button:hover {
+  background-color: rgba(38, 38, 38, 0.9);
+}
